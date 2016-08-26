@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/371/trunk/GroovyMud/src/test/java/org/groovymud/object
+END
+AbstractMudObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/360/trunk/GroovyMud/src/test/java/org/groovymud/object/AbstractMudObjectTest.java
+END
+AbstractContainerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/360/trunk/GroovyMud/src/test/java/org/groovymud/object/AbstractContainerTest.java
+END
+MockMudObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/371/trunk/GroovyMud/src/test/java/org/groovymud/object/MockMudObject.java
+END

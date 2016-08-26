@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/637/trunk/groovymud2/src/test/groovy/org/corbym/groovymud/world/object
+END
+ExitTest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/627/trunk/groovymud2/src/test/groovy/org/corbym/groovymud/world/object/ExitTest.groovy
+END
+MobTest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/637/trunk/groovymud2/src/test/groovy/org/corbym/groovymud/world/object/MobTest.groovy
+END
+ContainerTest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/631/trunk/groovymud2/src/test/groovy/org/corbym/groovymud/world/object/ContainerTest.groovy
+END
+MudItemTest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/631/trunk/groovymud2/src/test/groovy/org/corbym/groovymud/world/object/MudItemTest.groovy
+END

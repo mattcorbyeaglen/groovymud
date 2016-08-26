@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/587/trunk/demomud/groovy/mudspace/std/game/objects/views
+END
+ExitView.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/objects/views/ExitView.groovy
+END
+RoomView.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/587/trunk/demomud/groovy/mudspace/std/game/objects/views/RoomView.groovy
+END
+MOBView.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/objects/views/MOBView.groovy
+END
+ViewImpl.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/objects/views/ViewImpl.groovy
+END
+ContainerView.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/587/trunk/demomud/groovy/mudspace/std/game/objects/views/ContainerView.groovy
+END
+ContentsHelper.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/587/trunk/demomud/groovy/mudspace/std/game/objects/views/ContentsHelper.groovy
+END

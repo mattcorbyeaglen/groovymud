@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/385/trunk/GroovyMud/src/main/java/org/groovymud/shell/security
+END
+ActionCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/357/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/ActionCallback.java
+END
+PlayerCredentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/357/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/PlayerCredentials.java
+END
+MudPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/357/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/MudPermission.java
+END
+PasswordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/357/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/PasswordException.java
+END
+PasswordService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/379/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/PasswordService.java
+END
+MudLoginModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/338/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/MudLoginModule.java
+END
+MudPrincipal.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/385/trunk/GroovyMud/src/main/java/org/groovymud/shell/security/MudPrincipal.java
+END

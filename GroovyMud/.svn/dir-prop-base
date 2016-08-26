@@ -1,0 +1,16 @@
+K 14
+subclipse:tags
+V 0
+
+K 10
+svn:ignore
+V 65
+target
+.settings
+.classpath
+.project
+bin
+bin-groovy
+.springBeans
+
+END

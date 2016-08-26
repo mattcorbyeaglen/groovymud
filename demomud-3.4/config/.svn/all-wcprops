@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/532/trunk/demomud-3.4/config
+END
+policy.jaas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/532/trunk/demomud-3.4/config/policy.jaas
+END
+policy.old
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/532/trunk/demomud-3.4/config/policy.old
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/532/trunk/demomud-3.4/config/log4j.xml
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/532/trunk/demomud-3.4/config/policy
+END
+groovymud.conf
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/532/trunk/demomud-3.4/config/groovymud.conf
+END
+commandAliases.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/532/trunk/demomud-3.4/config/commandAliases.xml
+END
+jaas.config
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/532/trunk/demomud-3.4/config/jaas.config
+END
+telnetd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/532/trunk/demomud-3.4/config/telnetd.conf
+END
+policy.new
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/532/trunk/demomud-3.4/config/policy.new
+END

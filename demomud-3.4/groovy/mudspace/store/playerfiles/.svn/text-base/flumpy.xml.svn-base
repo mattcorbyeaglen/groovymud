@@ -1,0 +1,109 @@
+<std.game.objects.alive.PlayerImpl>
+  <weight>0.0</weight>
+  <name>Flumpy</name>
+  <description>${it.getName()} looks pretty cool.</description>
+  <shortNames>
+    <string>Flumpy</string>
+    <string>flumpy</string>
+  </shortNames>
+  <articleRequired>false</articleRequired>
+  <containerLocation>
+    <definition>domains/minnovar/town/TownArea.groovy</definition>
+    <beanId>domains:minnovar:TownArea:townCentre</beanId>
+    <areaName>domains:minnovar:TownArea</areaName>
+  </containerLocation>
+  <view class="std.game.objects.views.MOBView"/>
+  <initialBehaviours/>
+  <heartbeatBehaviours/>
+  <triggeredBehaviours/>
+  <beforeEventBehaviours/>
+  <afterEventBehaviours/>
+  <inventoryHandler>
+    <mudObjectHashSets class="java.util.Collections$SynchronizedMap" serialization="custom">
+      <java.util.Collections_-SynchronizedMap>
+        <default>
+          <m class="tree-map">
+            <no-comparator/>
+            <entry>
+              <string>3489939</string>
+              <set>
+                <domains.minnovar.town.RedPill>
+                  <id>3489939</id>
+                  <weight>0.0</weight>
+                  <name>Red Pill</name>
+                  <description>A little red pill.. I wonder what it does?</description>
+                  <shortNames>
+                    <string>red pill</string>
+                  </shortNames>
+                  <articleRequired>true</articleRequired>
+                  <view class="org.groovymud.object.views.ViewImpl"/>
+                  <initialBehaviours/>
+                  <heartbeatBehaviours/>
+                  <triggeredBehaviours/>
+                  <beforeEventBehaviours/>
+                  <afterEventBehaviours/>
+                </domains.minnovar.town.RedPill>
+              </set>
+            </entry>
+            <entry>
+              <string>Red Pill</string>
+              <set>
+                <domains.minnovar.town.RedPill reference="../../../entry/set/domains.minnovar.town.RedPill"/>
+              </set>
+            </entry>
+            <entry>
+              <string>red pill</string>
+              <set>
+                <domains.minnovar.town.RedPill reference="../../../entry/set/domains.minnovar.town.RedPill"/>
+              </set>
+            </entry>
+          </m>
+          <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+        </default>
+      </java.util.Collections_-SynchronizedMap>
+    </mudObjectHashSets>
+  </inventoryHandler>
+  <scope>PLAYER_SCOPE</scope>
+  <dead>false</dead>
+  <inCombat>false</inCombat>
+  <hitPoints>0</hitPoints>
+  <leaves>leaves</leaves>
+  <arrives>arrives from</arrives>
+  <departureMessage class="std.game.objects.alive.MOBImpl$_closure1">
+    <delegate class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <owner class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <thisObject class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <resolveStrategy>0</resolveStrategy>
+    <directive>0</directive>
+    <parameterTypes>
+      <java-class>java.lang.Object</java-class>
+    </parameterTypes>
+    <maximumNumberOfParameters>1</maximumNumberOfParameters>
+  </departureMessage>
+  <arrivalMessage class="std.game.objects.alive.MOBImpl$_closure2">
+    <delegate class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <owner class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <thisObject class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <resolveStrategy>0</resolveStrategy>
+    <directive>0</directive>
+    <parameterTypes>
+      <java-class>java.lang.Object</java-class>
+    </parameterTypes>
+    <maximumNumberOfParameters>1</maximumNumberOfParameters>
+  </arrivalMessage>
+  <subject>
+    <principals>
+      <org.groovymud.shell.security.MudPrincipal>
+        <name>guest</name>
+      </org.groovymud.shell.security.MudPrincipal>
+      <org.groovymud.shell.security.MudPrincipal>
+        <name>player</name>
+      </org.groovymud.shell.security.MudPrincipal>
+    </principals>
+    <readOnly>false</readOnly>
+  </subject>
+  <playerCredentials>
+    <username>flumpy</username>
+    <password>JX+c2ymv4UAwQjA0k6D4Xk/9ql4=</password>
+  </playerCredentials>
+</std.game.objects.alive.PlayerImpl>

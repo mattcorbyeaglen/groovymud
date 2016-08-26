@@ -1,0 +1,23 @@
+grant Principal org.groovymud.shell.security.MudPrincipal "guest" {
+	permission org.groovymud.shell.security.MudPermission "commands.player.*";
+};
+
+grant Principal org.groovymud.shell.security.MudPrincipal "player" {
+	
+};
+
+grant Principal org.groovymud.shell.security.MudPrincipal "trialcreator" {
+	permission org.groovymud.shell.security.MudPermission "commands.trialcreator.*";
+};
+
+grant Principal org.groovymud.shell.security.MudPrincipal "creator" {
+	permission org.groovymud.shell.security.MudPermission "commands.creator.*";
+};
+
+grant Principal org.groovymud.shell.security.MudPrincipal "lord"{
+	permission org.groovymud.shell.security.MudPermission "commands.lord.*";
+};
+
+grant Principal org.groovymud.shell.security.MudPrincipal "god"{
+	permission org.groovymud.shell.security.MudPermission "commands.god.*";
+};

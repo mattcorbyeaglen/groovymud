@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/377/trunk/GroovyMud/src/test/groovy/std/game/objects/exits
+END
+ExitImplTest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/373/trunk/GroovyMud/src/test/groovy/std/game/objects/exits/ExitImplTest.groovy
+END
+DoorImplTest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/377/trunk/GroovyMud/src/test/groovy/std/game/objects/exits/DoorImplTest.groovy
+END

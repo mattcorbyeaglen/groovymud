@@ -1,0 +1,3 @@
+Mud {
+	org.groovymud.shell.security.MudLoginModule required debug=true;
+};

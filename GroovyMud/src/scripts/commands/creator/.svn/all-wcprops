@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/creator
+END
+dest.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/creator/dest.groovy
+END
+load.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/creator/load.groovy
+END
+moveto.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/194/trunk/GroovyMud/src/scripts/commands/creator/moveto.groovy
+END

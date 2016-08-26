@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+	
+	<bean id="groovyDice" class="net.sf.groovydice.GroovyDice" init-method="initialize"/>
+	
+	<bean id="newExecutorService" class="java.util.concurrent.Executors" factory-method="newCachedThreadPool"/>
+	
+	<bean id="mudEngine" class="org.groovymud.engine.JMudEngine">
+		<property name="netDeadPlayers">
+			<ref bean="netDeadPlayers" />
+		</property>
+		<property name="objectAttendant" ref="objectAttendant" />
+		<property name="objectRegistry" ref="registry" />
+		<property name="telnetDaemon" ref="telnetDaemon" />
+		<property name="running" value="true" />
+		<property name="executor" ref="newExecutorService"/>
+		<lookup-method name="createShutdownBehaviour" bean="shutdownBehaviour" />
+	</bean>
+	
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>
+				classpath:groovymud.conf
+            </value>
+		</property>
+	</bean>
+	
+
+	<bean id="xStream" class="com.thoughtworks.xstream.XStream">
+		<property name="classLoader">
+			<bean factory-bean="groovyScriptEngine" factory-method="getGroovyClassLoader" />
+		</property>
+	</bean>
+
+	<bean id="globalInventoryHandler" class="org.groovymud.object.registry.InventoryHandler" />
+
+	<bean id="inventory" class="org.groovymud.object.registry.InventoryHandler" scope="prototype" />
+
+	<bean id="registry" class="org.groovymud.object.registry.Registry">
+		<constructor-arg ref="globalInventoryHandler" />
+		<property name="mudObjectAttendant" ref="objectAttendant"></property>
+	</bean>
+	
+	<bean id="theVoidLocation" class="org.groovymud.object.ObjectLocation">
+		<property name="beanId">
+			<value>${theVoid}</value>
+		</property>
+	</bean>
+
+	<bean id="playerImplLocation" class="org.groovymud.object.ObjectLocation">
+		<property name="beanId">
+			<value>${playerImpl}</value>
+		</property>
+	</bean>
+		
+	<bean id="objectAttendant" class="org.groovymud.object.registry.MudObjectAttendant" init-method="initialize" depends-on="registry">
+		<property name="groovyScriptEngine">
+			<ref local="groovyScriptEngine" />
+		</property>
+		<property name="theVoid" ref="theVoidLocation" />
+		<property name="playerImpl" ref="playerImplLocation" />
+
+		<property name="objectRegistry" ref="registry" />
+		<property name="XStream" ref="xStream" />
+		<property name="mudSpacePlayerLocation">
+			<value>
+				${store}/playerfiles/
+            </value>
+		</property>
+		<property name="mudEngine">
+			<ref bean="mudEngine" />
+		</property>
+	</bean>
+
+	<bean id="loggingExtendedTerminalIO" class="org.groovymud.shell.telnetd.LoggingExtendedTerminalIO" scope="prototype">
+		<constructor-arg>
+			<null></null>
+		</constructor-arg>
+	</bean>
+
+	<bean id="extendedTerminalIO" class="org.groovymud.shell.telnetd.ExtendedTerminalIO"
+		scope="prototype">
+		<constructor-arg>
+			<null></null>
+		</constructor-arg>
+		<property name="filterChain" ref="ioFilterChain"></property>
+	</bean>
+
+	<bean id="ioFilterChain" class="org.groovymud.shell.io.filters.TerminalFilterChain">
+		<property name="filters">
+			<list value-type="org.groovymud.shell.io.filters.TerminalIOFilter"/>
+		</property>
+	</bean>
+
+	<bean id="shutdownBehaviour" class="org.groovymud.engine.ShutdownBehaviour"
+		init-method="initialise" lazy-init="true">
+		<property name="engine" ref="mudEngine" />
+		<property name="maxShutdownHeartBeats" value="120" />
+		<property name="shutDownInformer" ref="shutdownInformer" />
+		<property name="attendant" ref="objectAttendant" />
+	</bean>
+	<bean class="org.groovymud.object.ObjectLocation" name="shutdownInformer">
+		<property name="beanId"  value="${shutDownInformer}"></property>
+	</bean>
+	
+	<bean class="org.groovymud.utils.CountingMap" id="netDeadPlayers" />
+	
+	<bean id="interpreter" class="org.groovymud.shell.command.CommandInterpreter" >
+		<property name="groovyScriptEngine" ref="groovyScriptEngine" />
+		<property name="mudObjectAttendant" ref="objectAttendant" />
+		<property name="objectRegistry">
+			<ref local="registry" />
+		</property>
+		<property name="commandAliases">
+			<ref bean="commandAliases" />
+		</property>
+		<property name="mudSpace">
+			<value>${mudSpace}</value>
+		</property>
+		<property name="scriptSpace">
+			<value>${scripts}</value>
+		</property>
+	</bean>
+	
+	<bean id="mudEngineClass" factory-bean="mudEngine" factory-method="getClass"/>
+	
+	<bean id="mudEngineClassLoader" factory-bean="mudEngineClass" factory-method="getClassLoader"/>
+	
+	<bean id="groovyClassLoader" class="groovy.lang.GroovyClassLoader"/>
+		
+	<bean id="groovyScriptEngine" class="groovy.util.GroovyScriptEngine">
+		<constructor-arg>
+			<list>
+				<value>${mudSpace}</value>
+				<value>${scripts}/commands/player</value>
+				<value>${scripts}/commands/creator</value>
+				<value>${scripts}/commands/trialcreator</value>
+				<value>${scripts}/commands/god</value>
+			</list>
+		</constructor-arg>
+		<property name="parentClassLoader" ref="groovyClassLoader"/>
+	</bean>
+	<bean name="passwordService" class="org.groovymud.shell.security.PasswordService" />
+	<bean name="splashLoader" class="org.groovymud.shell.SplashLoader">
+		<property name="mudSplashPageLocation">
+			<value>${mudSpace}/resources/splashpage.txt</value>
+		</property>
+	</bean>
+
+
+</beans>

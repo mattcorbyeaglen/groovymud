@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/331/trunk/GroovyMud/src/mudspace/std/game/guild/skill
+END
+Skill.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/331/trunk/GroovyMud/src/mudspace/std/game/guild/skill/Skill.groovy
+END
+SkillTree.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/331/trunk/GroovyMud/src/mudspace/std/game/guild/skill/SkillTree.groovy
+END
+SkillTreeDecorator.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/179/trunk/GroovyMud/src/mudspace/std/game/guild/skill/SkillTreeDecorator.groovy
+END

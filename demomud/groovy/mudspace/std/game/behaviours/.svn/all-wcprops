@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours
+END
+TriggeredBehaviour.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/TriggeredBehaviour.groovy
+END
+ScriptedBehaviour.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/ScriptedBehaviour.groovy
+END
+Behaviour.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/Behaviour.groovy
+END
+ChanceBehaviour.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/ChanceBehaviour.groovy
+END
+SpawnChecks.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/SpawnChecks.groovy
+END
+SpawnBehaviour.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/SpawnBehaviour.groovy
+END
+MOBWander.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/535/trunk/demomud/groovy/mudspace/std/game/behaviours/MOBWander.groovy
+END

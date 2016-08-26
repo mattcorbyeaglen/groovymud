@@ -1,0 +1,79 @@
+// These permissions apply to javac
+grant codeBase "file:${java.home}/lib/-" {
+        permission java.security.AllPermission;
+};
+
+// These permissions apply to all shared system extensions
+grant codeBase "file:${java.home}/jre/lib/ext/-" {
+        permission java.security.AllPermission;
+};
+
+// These permissions apply to javac when ${java.home] points at $JAVA_HOME/jre
+grant codeBase "file:${java.home}/../lib/-" {
+        permission java.security.AllPermission;
+};
+
+// These permissions apply to all shared system extensions when
+// ${java.home} points at $JAVA_HOME/jre
+grant codeBase "file:${java.home}/lib/ext/-" {
+        permission java.security.AllPermission;
+};
+
+// uncomment to remove the red pill security hole
+grant codeBase "file:${workspace.loc}${/}target${/}classes${/}-"{
+    permission javax.security.auth.AuthPermission "modifyPrincipals";
+	permission javax.security.auth.AuthPermission "modifyPublicCredentials";
+	permission javax.security.auth.AuthPermission "modifyPrivateCredentials";
+};
+grant codeBase "file:${lib}${/}-"{
+    permission javax.security.auth.AuthPermission "modifyPrincipals";
+	permission javax.security.auth.AuthPermission "modifyPublicCredentials";
+	permission javax.security.auth.AuthPermission "modifyPrivateCredentials";
+};
+
+// these permissions apply to all the mud. 
+grant {
+
+    // OS Specific properties to allow read access
+    permission java.util.PropertyPermission "*", "read";
+    
+	permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+   
+	permission java.lang.RuntimePermission "accessClassInPackage.*";
+	permission java.io.SerializablePermission "*";
+	
+    permission java.io.FilePermission "${workspace.loc}${/}-", "read";
+   	permission java.io.FilePermission "${workspace.loc}\\-", "read";
+    permission java.io.FilePermission "${groovy-scripts}${/}-", "read,write";
+    
+    permission java.io.FilePermission "${workspace.loc}${/}logs${/}-", "read,write";
+    permission java.io.FilePermission "${mudspace}${/}store${/}-", "read,write";
+    permission java.io.FilePermission "${lib}${/}-","read";
+    permission java.io.FilePermission "${lib}\\-","read";
+    permission java.io.FilePermission "${/}groovy${/}script", "read";
+    permission java.io.FilePermission "/groovy/script", "read";
+    permission java.net.SocketPermission "*", "connect,accept,resolve";
+    
+
+	permission javax.security.auth.AuthPermission "createLoginContext.Mud";
+	permission javax.security.auth.AuthPermission "doAsPrivileged";
+	
+	// comment out the following three lines in production, and uncommend the authperms above
+	// to remove the red pill security hole..
+/* 	permission javax.security.auth.AuthPermission "modifyPrincipals";
+	permission javax.security.auth.AuthPermission "modifyPublicCredentials";
+	permission javax.security.auth.AuthPermission "modifyPrivateCredentials";
+*/
+	permission javax.security.auth.PrivateCredentialPermission "org.groovymud.shell.security.PlayerCredentials org.groovymud.shell.security.MudPrincipal \"player\"", "read";
+	permission java.lang.management.ManagementPermission "monitor";
+	
+    permission groovy.security.GroovyCodeSourcePermission "${/}groovy${/}script", "read";
+    permission groovy.security.GroovyCodeSourcePermission "/groovy/script", "read";
+    permission groovy.security.GroovyCodeSourcePermission "/groovy/shell", "read";
+    permission groovy.security.GroovyCodeSourcePermission "x", "read";
+    
+	permission java.lang.RuntimePermission "*";
+	
+	permission java.util.PropertyPermission "org.apache.commons.logging.LogFactory.HashtableImpl", "read";
+
+};

@@ -1,0 +1,76 @@
+<std.game.objects.alive.PlayerImpl>
+  <weight>0.0</weight>
+  <name>Cerokhol</name>
+  <description>${it.getName()} looks pretty cool.</description>
+  <shortNames>
+    <string>Cerokhol</string>
+    <string>Cerokhol</string>
+  </shortNames>
+  <articleRequired>false</articleRequired>
+  <containerLocation>
+    <definition>domains/minnovar/town/TownArea.groovy</definition>
+    <beanId>domains:minnovar:TownArea:townCentre</beanId>
+    <areaName></areaName>
+  </containerLocation>
+  <view class="std.game.objects.views.MOBView"/>
+  <initialBehaviours/>
+  <heartbeatBehaviours/>
+  <triggeredBehaviours/>
+  <beforeEventBehaviours/>
+  <afterEventBehaviours/>
+  <inventoryHandler>
+    <mudObjectHashSets class="java.util.Collections$SynchronizedMap" serialization="custom">
+      <java.util.Collections_-SynchronizedMap>
+        <default>
+          <m class="tree-map">
+            <no-comparator/>
+          </m>
+          <mutex class="java.util.Collections$SynchronizedMap" reference="../../.."/>
+        </default>
+      </java.util.Collections_-SynchronizedMap>
+    </mudObjectHashSets>
+  </inventoryHandler>
+  <scope>PLAYER_SCOPE</scope>
+  <dead>false</dead>
+  <inCombat>false</inCombat>
+  <hitPoints>0</hitPoints>
+  <leaves>leaves</leaves>
+  <arrives>arrives from</arrives>
+  <departureMessage class="std.game.objects.alive.MOBImpl$_closure1">
+    <delegate class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <owner class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <thisObject class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <resolveStrategy>0</resolveStrategy>
+    <directive>0</directive>
+    <parameterTypes>
+      <java-class>java.lang.Object</java-class>
+    </parameterTypes>
+    <maximumNumberOfParameters>1</maximumNumberOfParameters>
+  </departureMessage>
+  <arrivalMessage class="std.game.objects.alive.MOBImpl$_closure2">
+    <delegate class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <owner class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <thisObject class="std.game.objects.alive.PlayerImpl" reference="../.."/>
+    <resolveStrategy>0</resolveStrategy>
+    <directive>0</directive>
+    <parameterTypes>
+      <java-class>java.lang.Object</java-class>
+    </parameterTypes>
+    <maximumNumberOfParameters>1</maximumNumberOfParameters>
+  </arrivalMessage>
+  <subject>
+    <principals>
+      <org.groovymud.shell.security.MudPrincipal>
+        <name>guest</name>
+      </org.groovymud.shell.security.MudPrincipal>
+      <org.groovymud.shell.security.MudPrincipal>
+        <name>player</name>
+      </org.groovymud.shell.security.MudPrincipal>
+    </principals>
+    <readOnly>false</readOnly>
+  </subject>
+  <playerCredentials>
+    <username>Cerokhol</username>
+    <password>DmNSHNHwsGZsSvuqODcUZvMkj1I=</password>
+  </playerCredentials>
+</std.game.objects.alive.PlayerImpl>

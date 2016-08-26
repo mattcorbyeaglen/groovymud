@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/384/trunk/GroovyMud/src/mudspace/std/game/objects/exits
+END
+DoorImpl.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/384/trunk/GroovyMud/src/mudspace/std/game/objects/exits/DoorImpl.groovy
+END
+DoorEvent.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/344/trunk/GroovyMud/src/mudspace/std/game/objects/exits/DoorEvent.groovy
+END
+ExitImpl.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/373/trunk/GroovyMud/src/mudspace/std/game/objects/exits/ExitImpl.groovy
+END

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-lazy-init="true">
+	<bean id="shellBridge" class="org.groovymud.shell.telnetd.ShellBridge" abstract="true">
+		<property name="objectRegistry" ref="registry" />
+		<property name="extendedTerminalIO" ref="extendedTerminalIO"/>		
+	</bean>
+    <bean id="loginShell" class="org.groovymud.shell.telnetd.LoginShell" scope="prototype" parent="shellBridge">
+    	<property name="objectLoader" ref="objectAttendant" />      
+        <property name="loginAttempts" value="3" />	
+        <property name="passwordService" ref="passwordService"/>	
+        <property name="splashLoader">
+        	<ref bean="splashLoader"/>
+        </property>
+        <property name="extendedTerminalIO" ref="extendedTerminalIO"/>
+    </bean>
+    
+    <bean id="mudShell" class="org.groovymud.shell.telnetd.MudShell" scope="prototype" parent="shellBridge">    	
+    	<property name="interpreter" ref="interpreter"/>  
+    </bean>
+	
+    <bean id="shellManager" class="net.wimpi.telnetd.shell.ShellManager" factory-method="createShellManager">
+        <constructor-arg>
+            <map>
+                <entry>
+                    <key>
+                        <value>loginShell</value>
+                    </key>
+                    <value>org.groovymud.shell.telnetd.LoginShell</value>
+                </entry>
+                <entry>
+                    <key>
+                        <value>mudShell</value>
+                    </key>
+                    <value>org.groovymud.shell.telnetd.MudShell</value>
+                </entry>
+                
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="portListener" class="net.wimpi.telnetd.net.PortListener">
+        <constructor-arg index="0">
+            <value>mudport</value>
+        </constructor-arg>
+        <constructor-arg index="1">
+            <value>${port}</value>
+        </constructor-arg>
+        <constructor-arg index="2">
+            <value>5</value>
+        </constructor-arg>
+        <property name="connectionManager" ref="connectionManager" />
+    </bean>
+
+    <bean id="connectionManager" class="net.wimpi.telnetd.net.ConnectionManager" scope="prototype">
+        <property name="maxConnections">
+            <value>65535</value>
+        </property>
+        <property name="warningTimeout">
+            <value>3600000</value>
+        </property>
+        <property name="loginShell">
+            <value>loginShell</value>
+        </property>
+        <property name="disconnectTimeout">
+            <value>60000</value>
+        </property>
+        <property name="housekeepingInterval">
+            <value>1000</value>
+        </property>
+        <property name="lineMode">
+            <value>false</value>
+        </property>
+    </bean>
+
+    <bean id="telnetDaemon" class="net.wimpi.telnetd.TelnetD" factory-method="createTelnetD" depends-on="terminalManager">
+        <property name="shellManager">
+            <ref local="shellManager" />
+        </property>
+        <property name="listeners">
+            <list>
+                <ref bean="portListener" />
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="vt100" class="net.wimpi.telnetd.io.terminal.vt100"></bean>
+    <bean id="ansi" class="net.wimpi.telnetd.io.terminal.ansi"></bean>
+    <bean id="xterm" class="net.wimpi.telnetd.io.terminal.xterm" />
+    <bean id="windoof" class="net.wimpi.telnetd.io.terminal.Windoof" />
+
+    <bean id="terminalManager" class="net.wimpi.telnetd.io.terminal.TerminalManager" factory-method="createTerminalManager">
+        <constructor-arg index="0" type="java.util.Map">
+            <map>
+                <entry>
+                    <key>
+                        <value>default</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>vt100</value>
+                    </key>
+                    <ref local="vt100" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>vt100-am</value>
+                    </key>
+                    <ref local="vt100" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>vt102</value>
+                    </key>
+                    <ref local="vt100" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>dec-vt102</value>
+                    </key>
+                    <ref local="vt100" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>ansi</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>color-xterm</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>xterm-color</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>vt320</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>vt220</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>linux</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>screen</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>xterm</value>
+                    </key>
+                    <ref local="ansi" />
+                </entry>
+                <entry>
+                    <key>
+                        <value>windoof</value>
+                    </key>
+                    <ref local="windoof" />
+                </entry>
+            </map>
+        </constructor-arg>
+        <constructor-arg index="1" type="boolean" value="true" />
+    </bean>
+
+
+
+</beans>

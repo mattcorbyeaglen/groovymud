@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/384/trunk/GroovyMud/src/scripts/commands/player
+END
+get.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/324/trunk/GroovyMud/src/scripts/commands/player/get.groovy
+END
+quit.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/384/trunk/GroovyMud/src/scripts/commands/player/quit.groovy
+END
+give.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/330/trunk/GroovyMud/src/scripts/commands/player/give.groovy
+END
+kill.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/120/trunk/GroovyMud/src/scripts/commands/player/kill.groovy
+END
+say.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/player/say.groovy
+END
+inventory.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/322/trunk/GroovyMud/src/scripts/commands/player/inventory.groovy
+END
+who.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/377/trunk/GroovyMud/src/scripts/commands/player/who.groovy
+END
+save.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/player/save.groovy
+END
+time.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/player/time.groovy
+END
+tell.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/player/tell.groovy
+END
+drop.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/235/trunk/GroovyMud/src/scripts/commands/player/drop.groovy
+END
+look.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/377/trunk/GroovyMud/src/scripts/commands/player/look.groovy
+END
+go.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/373/trunk/GroovyMud/src/scripts/commands/player/go.groovy
+END
+term.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/player/term.groovy
+END
+put.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/366/trunk/GroovyMud/src/scripts/commands/player/put.groovy
+END
+man-text.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/345/trunk/GroovyMud/src/scripts/commands/player/man-text.xml
+END
+man.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/384/trunk/GroovyMud/src/scripts/commands/player/man.groovy
+END

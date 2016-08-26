@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/597/trunk/demomud/lib
+END
+spring-asm-3.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/559/trunk/demomud/lib/spring-asm-3.0.0.RELEASE.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/559/trunk/demomud/lib/commons-logging-1.1.1.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/559/trunk/demomud/lib/commons-lang-2.4.jar
+END
+groovy-all-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/559/trunk/demomud/lib/groovy-all-1.7.0.jar
+END
+json-simple-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/559/trunk/demomud/lib/json-simple-1.1.jar
+END
+commons-net-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/559/trunk/demomud/lib/commons-net-1.4.1.jar
+END
+junit-3.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/559/trunk/demomud/lib/junit-3.8.1.jar
+END
+spring-context-3.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/559/trunk/demomud/lib/spring-context-3.0.0.RELEASE.jar
+END
+xpp3_min-1.1.4c.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/559/trunk/demomud/lib/xpp3_min-1.1.4c.jar
+END
+jline-0.9.94.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/559/trunk/demomud/lib/jline-0.9.94.jar
+END
+log4j-1.2.14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/560/trunk/demomud/lib/log4j-1.2.14.jar
+END
+slf4j-api-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/559/trunk/demomud/lib/slf4j-api-1.5.8.jar
+END
+jul-to-slf4j-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/559/trunk/demomud/lib/jul-to-slf4j-1.5.8.jar
+END
+telnetd-x-2.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/559/trunk/demomud/lib/telnetd-x-2.1.1.jar
+END
+oro-2.0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/559/trunk/demomud/lib/oro-2.0.8.jar
+END
+spring-beans-3.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/559/trunk/demomud/lib/spring-beans-3.0.0.RELEASE.jar
+END
+spring-core-3.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/559/trunk/demomud/lib/spring-core-3.0.0.RELEASE.jar
+END
+jcl-over-slf4j-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/559/trunk/demomud/lib/jcl-over-slf4j-1.5.8.jar
+END
+groovydice-1.4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/559/trunk/demomud/lib/groovydice-1.4.1.jar
+END
+slf4j-log4j12-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/560/trunk/demomud/lib/slf4j-log4j12-1.5.8.jar
+END
+spring-expression-3.0.0.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/559/trunk/demomud/lib/spring-expression-3.0.0.RELEASE.jar
+END
+joda-time-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/559/trunk/demomud/lib/joda-time-1.6.jar
+END
+grails-spring-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/559/trunk/demomud/lib/grails-spring-1.2.1.jar
+END
+groovymud-0.4.3-alpha.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/593/trunk/demomud/lib/groovymud-0.4.3-alpha.jar
+END
+qdox-1.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/559/trunk/demomud/lib/qdox-1.8.jar
+END
+xstream-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/559/trunk/demomud/lib/xstream-1.3.1.jar
+END
+cglib-nodep-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/559/trunk/demomud/lib/cglib-nodep-2.1.jar
+END
+plexus-utils-1.5.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/559/trunk/demomud/lib/plexus-utils-1.5.5.jar
+END
+inflector-0.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/559/trunk/demomud/lib/inflector-0.7.0.jar
+END
+xpp3-1.1.2a.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/559/trunk/demomud/lib/xpp3-1.1.2a.jar
+END

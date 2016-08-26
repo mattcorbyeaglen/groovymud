@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<man>
+	<entry name="commands">
+		<gpath statement="find{it[man.entry.@name]}"/>
+	</entry>
+	<entry name="look">
+		<description>
+			A good way to see whats around you.
+	
+			Looking describes the current room you are in, and helps display the
+			important
+			exits and anyone that might be in it. It may not show everyone, however!
+	
+			You can also look at something, or if you fancy having a rummage you
+			can look IN something.
+	      </description>
+		<syntax>
+			look | l | look at [something | someone]
+			look in [container]
+	      </syntax>
+		<example>
+			look at me
+			look in sack
+	      </example>
+	</entry>
+	<entry name="inventory">
+		<description>
+			Whats in your pockets?
+	
+			This little command shows you what you are carrying. You can also look
+			at yourself,
+			but this is generally said to be the briefest way of doing it.
+		</description>
+		<syntax>inventory inv i</syntax>
+		<seealso>look</seealso>
+	</entry>
+	<entry name="quit">
+		<description>
+			Feel like logging out? This command is your best buddy.
+			How easy could it be?
+	
+			We obviously don't want you to quit, but its probably best if you want
+			to
+			continue with any kind of life away from us :)
+	</description>
+		<syntax>
+			quit 
+	</syntax>
+	</entry>
+	<entry name="save">
+		<description>
+			Feel like saving someone? Try saving yourself!
+	
+			Saving, er, saves your character for later. 
+	</description>
+		<syntax>
+			save 
+	</syntax>
+	</entry>
+	<entry name="say">
+		<description>
+			Fancy saying something? Why keep it to yourself?
+	
+			Saying something is easy with the say command, just say whats on your
+			mind! Only people
+			in your current room will hear what you have to say. 
+	</description>
+		<syntax>
+			say [sentence]
+	</syntax>
+		<seealso>
+			shout, tell
+	</seealso>
+	</entry>
+	<entry name="who">
+		<description>
+			Who's online? Whos who in the groovy mud world.
+	  	</description>
+		<syntax>
+			who
+	  	</syntax>
+	</entry>
+	<entry name="drop">
+		<description>
+			Getting rid of something couldn't be more easy. 
+	  	</description>
+		<syntax>
+			drop [item]
+	  	</syntax>
+	</entry>
+	<entry name="get">
+		<description>
+			Picking stuff up is great. If its too heavy though, it might slow
+			you down!
+	</description>
+		<syntax>
+			get [all | all items | item | items] [from item]		
+	</syntax>
+		<example>
+			get all from sack
+			get red banana from sacks
+			get all red bananas from blue sack
+			get banana
+			get blue bananas
+	</example>
+		<seealso>
+			drop, put
+	</seealso>
+	</entry>
+	<entry name="term">
+		<description>
+			Change your terminal type, it could add colour to your world! Typing
+			"term types" will show you the terminal types we support.
+	</description>
+		<syntax>
+			term [terminal name] | types
+	</syntax>
+		<example>
+			term ansi
+			term types
+	</example>
+		<seealso>
+		</seealso>
+	</entry>
+</man>

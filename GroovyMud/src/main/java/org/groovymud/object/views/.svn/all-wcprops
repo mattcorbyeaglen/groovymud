@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/365/trunk/GroovyMud/src/main/java/org/groovymud/object/views
+END
+ExitView.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/356/trunk/GroovyMud/src/main/java/org/groovymud/object/views/ExitView.java
+END
+RoomView.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/356/trunk/GroovyMud/src/main/java/org/groovymud/object/views/RoomView.java
+END
+View.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/356/trunk/GroovyMud/src/main/java/org/groovymud/object/views/View.java
+END
+ViewImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/342/trunk/GroovyMud/src/main/java/org/groovymud/object/views/ViewImpl.java
+END
+ContainerView.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/356/trunk/GroovyMud/src/main/java/org/groovymud/object/views/ContainerView.java
+END
+ContentsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/365/trunk/GroovyMud/src/main/java/org/groovymud/object/views/ContentsHelper.java
+END
